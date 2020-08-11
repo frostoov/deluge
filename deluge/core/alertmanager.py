@@ -51,6 +51,8 @@ class AlertManager(component.Component):
 
         alert_mask = (
             lt.alert.category_t.error_notification
+            | lt.alert.category_t.connect_notification
+            | lt.alert.category_t.peer_log_notification
             | lt.alert.category_t.port_mapping_notification
             | lt.alert.category_t.storage_notification
             | lt.alert.category_t.tracker_notification
